@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import { Note } from "./models/note.model";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([
@@ -13,7 +15,11 @@ function App() {
     },
   ]);
 
-  return <div className="App">App</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
