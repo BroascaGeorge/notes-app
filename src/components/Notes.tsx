@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Note } from "../models/note.model";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { Note } from "../models/note.model";
 
 interface INotesProps {
   note: Note;
